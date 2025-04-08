@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>NEXT主题使用笔记</title>
+      <link href="/2025/04/08/NEXT%E4%B8%BB%E9%A2%98%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/"/>
+      <url>/2025/04/08/NEXT%E4%B8%BB%E9%A2%98%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<h1 id="NEXT主题使用笔记"><a href="#NEXT主题使用笔记" class="headerlink" title="NEXT主题使用笔记"></a>NEXT主题使用笔记</h1><h2 id="1-加入搜索功能"><a href="#1-加入搜索功能" class="headerlink" title="1. 加入搜索功能"></a>1. 加入搜索功能</h2><h3 id="1-1-安装插件"><a href="#1-1-安装插件" class="headerlink" title="1.1 安装插件"></a>1.1 安装插件</h3><ol><li>在<code>themes/next/_config.yml</code>中搜索<code>local_search</code>字段，将其<code>enable</code>字段设置为<code>true</code>，并安装插件<code>hexo-generator-searchdb</code>。</li><li>终端根目录下载插件<em>hexo-generator-searchdb</em></li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure><ol><li>在根目录*_config.yml*中任意行插入以下内容：<br>：&#96;&#96;&#96;bash<br>search:<br>  path: search.xml<br>  field: post<br>  format: html<br>  limit: 10000</li></ol><pre><code>### 1.2 配置插件        ### 1.1 主题配置文件主题配置文件位于`themes/next/_config.yml`，该文件为YAML格式，使用时注意缩进。### 1.2 主题配置项#### 1.2.1 主题风格主题风格配置项位于`themes/next/_config.yml`的`scheme`字段下，默认为`Muse`，可选`Mist`、`Pisces`、`Gemini`。---</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 笔记 </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> Next”，“教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>图片压缩及编辑软件推荐XnView</title>
       <link href="/2025/04/08/%E5%9B%BE%E7%89%87%E5%8E%8B%E7%BC%A9%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90XnView/"/>
       <url>/2025/04/08/%E5%9B%BE%E7%89%87%E5%8E%8B%E7%BC%A9%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90XnView/</url>
