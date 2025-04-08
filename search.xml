@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>甲骨文服务器无法访问宝塔面板</title>
+      <link href="/2025/04/08/%E7%94%B2%E9%AA%A8%E6%96%87%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF/"/>
+      <url>/2025/04/08/%E7%94%B2%E9%AA%A8%E6%96%87%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF/</url>
+      
+        <content type="html"><![CDATA[<h3 id="甲骨文服务器无法访问宝塔面板"><a href="#甲骨文服务器无法访问宝塔面板" class="headerlink" title="甲骨文服务器无法访问宝塔面板"></a>甲骨文服务器无法访问宝塔面板</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">rm</span> -f /etc/iptables/rules.v4</span><br><span class="line"><span class="built_in">rm</span> -f /etc/iptables/rules.v6</span><br><span class="line">reboot</span><br></pre></td></tr></table></figure><span id="more"></span>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+            <tag> 宝塔面板 </tag>
+            
+            <tag> 甲骨文服务器 </tag>
+            
+            <tag> 笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>NEXT主题使用笔记</title>
       <link href="/2025/04/08/NEXT%E4%B8%BB%E9%A2%98%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/"/>
       <url>/2025/04/08/NEXT%E4%B8%BB%E9%A2%98%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/</url>
