@@ -36,8 +36,8 @@
       <tags>
         <tag>Hexo</tag>
         <tag>笔记</tag>
-        <tag>教程</tag>
         <tag>Next</tag>
+        <tag>教程</tag>
       </tags>
   </entry>
   <entry>
@@ -222,9 +222,25 @@
         <category>视频</category>
       </categories>
       <tags>
-        <tag>视频</tag>
         <tag>FPV</tag>
+        <tag>视频</tag>
         <tag>航拍</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>七月蝉山</title>
+    <url>/2024/07/02/%E4%B8%83%E6%9C%88%E8%9D%89%E5%B1%B1/</url>
+    <content><![CDATA[  <video  height="auto" controls>
+     <source src="https://r2-img.0910.men/video/%E4%B8%83%E6%9C%88.mp4" type="video/mp4">
+   </video>
+]]></content>
+      <categories>
+        <category>视频</category>
+      </categories>
+      <tags>
+        <tag>FPV</tag>
+        <tag>视频</tag>
+        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
@@ -240,21 +256,6 @@
         <tag>视频</tag>
         <tag>生活</tag>
         <tag>旅游</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>七月蝉山</title>
-    <url>/2023/08/07/%E4%B8%83%E6%9C%88%E8%9D%89%E5%B1%B1/</url>
-    <content><![CDATA[  <video  height="auto" controls>
-     <source src="https://r2-img.0910.men/video/%E4%B8%83%E6%9C%88.mp4" type="video/mp4">
-   </video>]]></content>
-      <categories>
-        <category>视频</category>
-      </categories>
-      <tags>
-        <tag>视频</tag>
-        <tag>FPV</tag>
-        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
