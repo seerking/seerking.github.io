@@ -34,8 +34,8 @@
         <category>笔记</category>
       </categories>
       <tags>
-        <tag>笔记</tag>
         <tag>Hexo</tag>
+        <tag>笔记</tag>
         <tag>Next</tag>
         <tag>教程</tag>
       </tags>
@@ -80,6 +80,9 @@
 
 <span id="more"></span></li>
 </ul>
+<p><strong>全卷</strong></p>
+<p>  <img src="https://r2-img.0910.men/PicGo-img/2025/04/286614834_5_20240728014258435.jpg"></p>
+<p><strong>分段</strong></p>
 <p><img src="https://r2-img.0910.men/PicGo-img/2025/04/17009998.jpg"></p>
 <p><img src="https://r2-img.0910.men/PicGo-img/2025/04/17009999.jpg"></p>
 <p><img src="https://r2-img.0910.men/PicGo-img/2025/04/17010000.jpg"></p>
@@ -462,10 +465,10 @@
         <category>软件推荐</category>
       </categories>
       <tags>
+        <tag>笔记</tag>
         <tag>MarkDown</tag>
         <tag>软件推荐&quot;</tag>
         <tag>工具</tag>
-        <tag>笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -485,9 +488,9 @@
         <category>笔记</category>
       </categories>
       <tags>
-        <tag>笔记</tag>
         <tag>Hexo</tag>
         <tag>git</tag>
+        <tag>笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -582,8 +585,8 @@
         <category>笔记</category>
       </categories>
       <tags>
-        <tag>工具</tag>
         <tag>笔记</tag>
+        <tag>工具</tag>
         <tag>软件推荐</tag>
       </tags>
   </entry>
@@ -624,8 +627,8 @@
         <category>笔记</category>
       </categories>
       <tags>
-        <tag>MarkDown</tag>
         <tag>笔记</tag>
+        <tag>MarkDown</tag>
       </tags>
   </entry>
   <entry>
