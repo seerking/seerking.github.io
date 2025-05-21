@@ -1,111 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>ERROR Deployer not found:git</title>
-    <url>/2022/04/09/ERROR/</url>
-    <content><![CDATA[<blockquote>
-<p>在使用 Hexo 进行网站部署时，遇到“ERROR Deployer not found: git”错误是比较常见的问题。该错误通常由以下几个原因引起，并且有相应的解决方法：</p>
-</blockquote>
-<h3 id="Git-未安装：确保你的电脑上已经安装了-Git。如果没有安装，可以通过以下命令在终端中安装-Git："><a href="#Git-未安装：确保你的电脑上已经安装了-Git。如果没有安装，可以通过以下命令在终端中安装-Git：" class="headerlink" title="Git 未安装：确保你的电脑上已经安装了 Git。如果没有安装，可以通过以下命令在终端中安装 Git："></a>Git 未安装：确保你的电脑上已经安装了 Git。如果没有安装，可以通过以下命令在终端中安装 Git：</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt-get install git</span><br></pre></td></tr></table></figure>
-
-<h4 id="Git-未配置：确保你的-Git-已经正确配置。可以通过以下命令检查-Git-配置："><a href="#Git-未配置：确保你的-Git-已经正确配置。可以通过以下命令检查-Git-配置：" class="headerlink" title="Git 未配置：确保你的 Git 已经正确配置。可以通过以下命令检查 Git 配置："></a>Git 未配置：确保你的 Git 已经正确配置。可以通过以下命令检查 Git 配置：</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br><span class="line">git config --global user.email &quot;youremail@example.com&quot;</span><br></pre></td></tr></table></figure>
-
-<h4 id="未安装-hexo-deployer-git-插件：确保你的-Hexo-已经安装了-hexo-deployer-git-插件。CD-到博客根目录-通过以下命令安装-hexo-deployer-git-插件："><a href="#未安装-hexo-deployer-git-插件：确保你的-Hexo-已经安装了-hexo-deployer-git-插件。CD-到博客根目录-通过以下命令安装-hexo-deployer-git-插件：" class="headerlink" title="未安装 hexo-deployer-git 插件：确保你的 Hexo 已经安装了 hexo-deployer-git 插件。CD 到博客根目录,通过以下命令安装 hexo-deployer-git 插件："></a>未安装 hexo-deployer-git 插件：确保你的 Hexo 已经安装了 hexo-deployer-git 插件。CD 到博客根目录,通过以下命令安装 hexo-deployer-git 插件：</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>笔记</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>git</tag>
-        <tag>笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MarkDown必备插件</title>
-    <url>/2022/04/09/MarkDown%E5%BF%85%E5%A4%87%E6%8F%92%E4%BB%B6/</url>
-    <content><![CDATA[<h3 id="Markdown-All-in-One-emsp-作者主页"><a href="#Markdown-All-in-One-emsp-作者主页" class="headerlink" title="Markdown All in One&emsp;作者主页"></a><span style="color: green;">Markdown All in One</span>&emsp;<a href="https://handbrake.fr/" title="进入官网">作者主页</a></h3><blockquote>
-<p>Markdown All in One 是一款功能强大的 Markdown 编辑器插件，专为 Visual Studio Code（VSCode）设计，旨在提升 Markdown 文档的编写和编辑效率。这款插件集成了多种实用功能和快捷键，适用于技术文档、博客文章、笔记等多种场景。</p>
-</blockquote>
-<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/PixPin_2025-04-09_17-45-19.png" alt="作者主页图片"></p>
-<span id="more"></span>
-<details>
-    <summary>核心功能</summary>
-
-<ul>
-<li>快捷键支持：Markdown All in One 提供了丰富的快捷键操作，如加粗、斜体、删除线、插入链接、插入图片、插入表格等，方便用户快速编辑文档。</li>
-<li>自动补全：插件支持自动补全功能，包括 Markdown 语法、代码块、标题等，提高编写效率。</li>
-<li>代码块语法高亮：插件支持多种编程语言的代码块语法高亮，方便用户查看和编辑代码。</li>
-<li>实时预览：插件支持实时预览 Markdown 文档，方便用户查看文档效果。</li>
-<li>目录生成与更新：用户可以通过快捷键（如 Ctrl + Shift + P）快速创建或更新文档目录，方便导航和组织内容。</li>
-<li>数学公式支持：插件支持 LaTeX 数学公式的插入和渲染，方便用户在 Markdown 文档中插入复杂的数学公式。</li>
-<li>自定义快捷键：用户可以根据自己的习惯自定义快捷键，方便快速执行常用操作。</li>
-<li>支持多种 Markdown 解析器：插件支持多种 Markdown 解析器，如 CommonMark、GitHub Flavored Markdown 等，用户可以根据需求选择合适的解析器。</li>
-<li>支持多种主题：插件支持多种主题，包括默认主题和第三方主题，用户可以根据自己的喜好选择合适的主题。</li>
-<li>支持多种扩展插件：插件支持多种扩展插件，如 MarkdownLint、MarkdownTOC 等，用户可以根据需求安装和使用这些扩展插件。</li>
-<li>支持多种文件格式：插件支持多种文件格式，如 Markdown、HTML、PDF 等，用户可以根据需求导出文档。</li>
-<li>支持多种语言：插件支持多种语言，包括中文、英文等，用户可以根据自己的语言习惯选择合适的语言。</li>
-</ul>
- </details>
-
-<p><strong>常用快捷键</strong></p>
-<table>
-<thead>
-<tr>
-<th>功能</th>
-<th align="center">快捷键</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>加粗</td>
-<td align="center">Ctrl + B</td>
-<td>将选中的文本加粗</td>
-</tr>
-<tr>
-<td>斜体</td>
-<td align="center">Ctrl + I</td>
-<td>将选中的文本变为斜体</td>
-</tr>
-<tr>
-<td>删除线</td>
-<td align="center">Alt + S</td>
-<td>将选中的文本添加删除线</td>
-</tr>
-<tr>
-<td>插入链接</td>
-<td align="center">Ctrl + V</td>
-<td>插入一个链接</td>
-</tr>
-<tr>
-<td>插入表格</td>
-<td align="center">Ctrl + T</td>
-<td>插入一个表格</td>
-</tr>
-<tr>
-<td>插入代码块</td>
-<td align="center">Ctrl + Shift + K</td>
-<td>插入一个代码块</td>
-</tr>
-<tr>
-<td>切换标题</td>
-<td align="center">Ctrl + Shift + [</td>
-<td>切换当前行的标题级别</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>软件推荐</category>
-      </categories>
-      <tags>
-        <tag>笔记</tag>
-        <tag>MarkDown</tag>
-        <tag>软件推荐&quot;</tag>
-        <tag>工具</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>NEXT主题使用笔记</title>
     <url>/2021/04/08/NEXT%E4%B8%BB%E9%A2%98%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h3 id="加入搜索功能，添加本地自定义站点内容搜索，可以通过文字标题或文字内容关键字搜索出相应文章"><a href="#加入搜索功能，添加本地自定义站点内容搜索，可以通过文字标题或文字内容关键字搜索出相应文章" class="headerlink" title="加入搜索功能，添加本地自定义站点内容搜索，可以通过文字标题或文字内容关键字搜索出相应文章"></a>加入搜索功能，添加本地自定义站点内容搜索，可以通过文字标题或文字内容关键字搜索出相应文章</h3><h4 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h4><p>&ensp;&ensp;&ensp;&ensp;终端根目录下载插件 hexo-generator-searchdb</p>
@@ -139,67 +34,10 @@
         <category>笔记</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
         <tag>笔记</tag>
+        <tag>Hexo</tag>
         <tag>Next</tag>
         <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Docker安装portainer详细步骤</title>
-    <url>/2010/04/07/docker%E5%AE%89%E8%A3%85portainer%E8%AF%A6%E7%BB%86%E6%AD%A5%E9%AA%A4/</url>
-    <content><![CDATA[<p>portainer 是一款容器管理可视化界面，不想在虚拟中使用命令管理容器的小伙伴，可以选择安装 portainer 对容器进行管理，查看日志、启动、停止容器等非常方便。</p>
-<span id="more"></span>
-
-<ul>
-<li><strong>搜索 portainer 镜像</strong></li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">docker search portainer</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/202302102229804.png" alt="img"></p>
-<ul>
-<li><strong>拉取 portainer 镜像</strong></li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">docker pull portainer/portainer   #pull 标星最多的镜像（STARS数最多的）</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><strong>启动 portainer 容器</strong></li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">docker run -d -p 9000:9000 --restart=always \</span><br><span class="line">-v /var/run/docker.sock:/var/run/docker.sock \</span><br><span class="line">--name portainer lihaixin/portainer</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><strong>docker ps 查看容器</strong></li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">docker ps</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><strong>查看日志</strong></li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">docker logs -f portainer</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><strong>浏览器中 ip+端口 9000 访问</strong></li>
-</ul>
-<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/202302102233691.png"></p>
-]]></content>
-      <tags>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>七月蝉山</title>
-    <url>/2024/07/02/%E4%B8%83%E6%9C%88%E8%9D%89%E5%B1%B1/</url>
-    <content><![CDATA[  <video  height="auto" controls>
-     <source src="https://r2-img.0910.men/video/%E4%B8%83%E6%9C%88.mp4" type="video/mp4">
-   </video>
-]]></content>
-      <categories>
-        <category>视频</category>
-      </categories>
-      <tags>
-        <tag>视频</tag>
-        <tag>FPV</tag>
-        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
@@ -220,22 +58,150 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2009/01/09/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+    <title>陈炉古镇</title>
+    <url>/2025/05/01/%E9%99%88%E7%82%89%E5%8F%A4%E9%95%87/</url>
+    <content><![CDATA[<p><img src="https://r2-img.0910.men/PicGo-img/2025/05/IMG_20250501_191019.jpg"></p>
+<span id="more"></span>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p><img src="https://r2-img.0910.men/PicGo-img/2025/05/IMG_20250501_190925.jpg"><br><img src="https://r2-img.0910.men/PicGo-img/2025/05/IMG_20250501_190914.jpg"><br><img src="https://r2-img.0910.men/PicGo-img/2025/05/IMG_20250501_191029.jpg"><br><img src="https://r2-img.0910.men/PicGo-img/2025/05/IMG_20250501_190810.jpg"><br><img src="https://r2-img.0910.men/PicGo-img/2025/05/IMG_20250501_191222.jpg"><br><img src="https://r2-img.0910.men/PicGo-img/2025/05/IMG_20250501_191148.jpg"><br><img src="https://r2-img.0910.men/PicGo-img/2025/05/IMG_20250501_191005.jpg"></p>
 ]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+        <tag>照片</tag>
+        <tag>陈炉古镇</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>仇英作品集</title>
+    <url>/2025/04/15/%E4%BB%87%E8%8B%B1%E4%BD%9C%E5%93%81%E9%9B%86/</url>
+    <content><![CDATA[<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/%E7%8B%AC%E4%B9%90%E5%9B%AD%E5%9B%BE%E5%8D%B7.%E6%98%8E.%E4%BB%87%E8%8B%B1%E7%BB%98.65500X1547%E5%83%8F%E7%B4%A0.%E5%85%8B%E5%88%A9%E5%A4%AB%E5%85%B0%E8%89%BA%E6%9C%AF%E5%8D%9A%E7%89%A9%E9%A6%86%E8%97%8F.jpg"></p>
+]]></content>
+      <categories>
+        <category>古画欣赏</category>
+      </categories>
+      <tags>
+        <tag>古画</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>汉宫春晓图</title>
+    <url>/2025/04/15/%E6%B1%89%E5%AE%AB%E6%98%A5%E6%99%93%E5%9B%BE/</url>
+    <content><![CDATA[<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/17010201.jpg"></p>
+<blockquote>
+<p>《汉宫春晓图》是明代画家仇英创作的一幅绢本重彩仕女画，被誉为中国 “重彩仕女第一长卷”。此画描绘了汉宫春晓的情景，画面中宫女们身着华服，妆点艳丽，在春光中忙碌着，展现了当时宫廷生活的繁华与热闹。</p>
+</blockquote>
+<details style="font-family: 仿宋, FangSong; font-size: 1.2em;">
+<summary>详细介绍</summary>  
+基本信息
+
+<ul>
+<li><p>尺寸：纵 30.6 厘米，横 574.5 厘米。</p>
+</li>
+<li><p>收藏地：现收藏于中国台北故宫博物院。</p>
+</li>
+<li><p>创作时间：大约于嘉靖十九年至二十三年（1540—1544 年）间创作完成。</p>
+</li>
+<li><p>画面内容</p>
+<ul>
+<li>人物众多：画面共描绘了 113 人，包括后妃、宫娥、皇子、太监、画师等，人物衣着纤华，姿态各异。</li>
+<li>场景丰富：用手卷的形式描绘暮春时节宫闱之中的日常琐事场景，如妆扮、浇灌、折枝、插花、饲养孔雀、歌舞、弹唱、吹奏、围炉、下棋、读书、斗草、对镜、观画、戏婴、送食、挥扇等。</li>
+<li>布局精妙：从 “汉宫” 外景画起，晓烟笼罩柳梢，花柳点出 “春”，展烟带出 “晓”。入宫墙内，可见渠水、鸳鸯白鹏，宫室内外人物活动丰富多样，建筑楼阁台榭、栋宇彩绘与山石花木穿插其间，构成有机整体。</li>
+</ul>
+</li>
+<li><p>艺术特色</p>
+<ul>
+<li>构图：一排排的宫廷房屋从右向左贯穿于画面，房屋一半只露于画面上，未画出房顶，增大了画面的横向空间，体现了仇英对 “界画” 的高超造诣，楼台殿阁、画栋雕梁造型美，具备古雅厚实之趣。</li>
+<li>人物：人物形象与背景完美融合，使画面有情节性且人物形象丰满。众多仕女欢乐地参与各种休闲活动，服饰含蓄蕴藉，追求幽淡高雅格调，具有 “雅俗共赏”“文质相兼” 的艺术特色。</li>
+<li>设色：采用工笔重彩笔法，整个画面鲜丽雅致，利用红色搭配，使仕女服饰、生活用品等带有不同程度的红色，错落有致，还采用特有的青绿山水画法，融合渲染、点皴等技法，红与绿融合，再以朱红暖色调宫殿为背景衬托，让画面充满朝气和欢乐。</li>
+<li>线条：总体特点是细而略有变化的线条，用细线准确塑造形体，女性角色用细而匀的线条勾勒面部，突出仕女柔嫩娇美的特点，仕女服装线条用细微变化和动势，勾勒出服饰轻盈飘逸的特点；男性角色面部线条更粗犷有力，服装线条也更遒劲有力，转折和提按明显，突出人物特点，与建筑和山石树木的用笔和皴擦形成对比，使整幅画卷层次丰富。</li>
+</ul>
+</li>
+<li><p>文化意义</p>
+<ul>
+<li>审美体现：画题 “汉宫春晓” 概括了绘画的题材与内容，表达了仇英对宫廷浮华美好生活的赞美，同时也体现了当时文人的审美观念和趣味，主观意趣与自然之境相结合，整体渲染出娴雅幽然的境界，处处显示着人们积极向上、热爱生活的人文思想。</li>
+<li>历史价值：以艺术的形式展现了明代宫廷生活的面貌，反映了那个时代的社会风俗和审美趣味，为后人了解古代宫廷文化、社会生活等提供了宝贵的视觉资料，具有较高的历史文化价值。</li>
+</ul>
+</details>
+
+
+<span id="more"></span></li>
+</ul>
+<p><strong>横幅全卷</strong></p>
+<p>  <img src="https://r2-img.0910.men/PicGo-img/2025/04/286614834_5_20240728014258435.jpg"></p>
+<p><strong>分段</strong></p>
+<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/17009998.jpg"></p>
+<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/17009999.jpg"></p>
+<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/17010000.jpg"></p>
+<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/17010001.jpg"></p>
+<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/17010002.jpg"></p>
+<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/17010003.jpg"></p>
+<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/17010004.jpg"></p>
+<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/1701005.jpg"></p>
+<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/17010006.jpg"></p>
+<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/17010007.jpg"></p>
+<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/17010008.jpg"></p>
+<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/17010009.jpg"></p>
+<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/17010010.jpg"></p>
+]]></content>
+      <categories>
+        <category>古画欣赏</category>
+      </categories>
+      <tags>
+        <tag>古画</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>推荐几个高清古画网站</title>
+    <url>/2025/04/14/%E6%8E%A8%E8%8D%90%E5%87%A0%E4%B8%AA%E9%AB%98%E6%B8%85%E5%8F%A4%E7%94%BB%E7%BD%91%E7%AB%99/</url>
+    <content><![CDATA[<p>1-中华珍宝馆 <a href="http://www.ltfc.net/">http://www.ltfc.net/</a></p>
+<p>2-三典轩 <a href="http://www.3zitie.cn/">http://www.3zitie.cn/</a> 商业网站，需要付费</p>
+<p>3-书格 <a href="https://new.shuge.org/collection/painting/">https://new.shuge.org/collection/painting/</a> 每个人都能自由地看到我们的文明</p>
+<p>4-光明之门 <a href="http://www.gmzm.org/">http://www.gmzm.org/</a></p>
+<p>5-故宫名画记 <a href="https://minghuaji.dpm.org.cn/">https://minghuaji.dpm.org.cn/</a></p>
+<p>6-浮世绘检索 <a href="https://ja.ukiyo-e.org/">https://ja.ukiyo-e.org/</a></p>
+<p>7-昵图网 <a href="https://www.nipic.com/">https://www.nipic.com/</a></p>
+<p>8-数字多宝阁 <a href="https://www.dpm.org.cn/shuziduobaoge.html">https://www.dpm.org.cn/shuziduobaoge.html</a></p>
+]]></content>
+      <categories>
+        <category>网站推荐</category>
+      </categories>
+      <tags>
+        <tag>古画</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>驱动更新软件</title>
+    <url>/2025/04/11/%E9%A9%B1%E5%8A%A8%E6%9B%B4%E6%96%B0%E8%BD%AF%E4%BB%B6/</url>
+    <content><![CDATA[<h3 id="驱动管理软件-驱动总裁-emsp-点击下载"><a href="#驱动管理软件-驱动总裁-emsp-点击下载" class="headerlink" title="驱动管理软件 驱动总裁&emsp;点击下载"></a><span style="color: green;">驱动管理软件 驱动总裁</span>&emsp;<a href="https://www.sysceo.com/">点击下载</a></h3><blockquote>
+<p>驱动总裁是一款功能强大、操作便捷且高度自定义的驱动管理工具，适合需要高效管理硬件驱动的用户。无论是日常使用还是系统封装，它都提供了强大的支持，是硬件驱动管理的优选工具。</p>
+</blockquote>
+<details>
+    <summary>功能介绍</summary>
+
+<p>功能全面：驱动总裁支持在线和离线两种模式，能够精准扫描硬件并自动匹配最佳驱动程序，同时支持多种类型的驱动包（如 WIM、WIM+、7Z 和 WIM 格式）。此外，它还内置了丰富的驱动库，涵盖主板、显卡、声卡、网卡等设备，适用于笔记本、台式机以及苹果电脑的 Windows 系统。</p>
+<p>操作简便：用户可以通过一键智能安装功能快速完成驱动安装，也可以通过手动自选模式进行个性化设置。此外，软件支持离线安装包和联网安装包的双模式安装，满足不同场景下的需求。</p>
+<p>高度自定义：用户可以自定义添加驱动程序，并创建专属驱动包，以适应特定需求。例如，用户可以根据硬件型号和操作系统版本选择合适的驱动版本。</p>
+<p>兼容性与稳定性：驱动总裁支持从 WinXP 到 Win10 等多个 Windows 操作系统，包括 PE 环境和苹果电脑的 Bootcamp 模式，确保了广泛的硬件兼容性。此外，软件还支持离线驱动库的实时更新，即使在无网络环境下也能获取最新驱动。</p>
+<p>无广告与无绑定：驱动总裁是一款无广告、无插件的绿色软件，不绑定推广，用户可以放心使用。</p>
+<p>版本多样性：驱动总裁有多个版本可供选择，包括免扫码登录版、单文件版、网卡版等，以满足不同用户的需求。例如，免扫码登录版免去了扫码登录的麻烦，而单文件版则更加轻便易用<br>。</p>
+<p>一款优秀的驱动安装软件，驱动总裁，最新免扫码登录 2.10.0.1 版本免费下载！<br>00:59</p>
+<p>一款优秀的驱动安装工具，驱动总裁，最新免扫码登录 2.17 版本！速度超级块~<br>01:37</p>
+<p>安全性与可靠性：驱动总裁通过了 360 检测、天擎检测和电脑管家的检测，是一款安全可靠的驱动管理工具。</p>
+<p>更新与优化：软件不断更新，以适应新硬件的驱动需求。例如，最新版本增加了对英特尔 10 代 CPU、USB3.X 和核显驱动的支持，同时修复了多项已知问题，提升了用户体验</p>
+ </details>
+
+<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/PixPin_2025-04-11_13-19-30.png"></p>
+]]></content>
+      <categories>
+        <category>软件推荐</category>
+      </categories>
+      <tags>
+        <tag>工具软件</tag>
+        <tag>驱动管理</tag>
+      </tags>
   </entry>
   <entry>
     <title>图片压缩及编辑软件推荐XnView</title>
@@ -278,121 +244,6 @@
       <tags>
         <tag>图片压缩</tag>
         <tag>工具软件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>仇英作品集</title>
-    <url>/2025/04/15/%E4%BB%87%E8%8B%B1%E4%BD%9C%E5%93%81%E9%9B%86/</url>
-    <content><![CDATA[<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/%E7%8B%AC%E4%B9%90%E5%9B%AD%E5%9B%BE%E5%8D%B7.%E6%98%8E.%E4%BB%87%E8%8B%B1%E7%BB%98.65500X1547%E5%83%8F%E7%B4%A0.%E5%85%8B%E5%88%A9%E5%A4%AB%E5%85%B0%E8%89%BA%E6%9C%AF%E5%8D%9A%E7%89%A9%E9%A6%86%E8%97%8F.jpg"></p>
-]]></content>
-      <categories>
-        <category>古画欣赏</category>
-      </categories>
-      <tags>
-        <tag>古画</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Markdown 笔记</title>
-    <url>/2012/05/09/Markdown%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h3 id="基础用法"><a href="#基础用法" class="headerlink" title="基础用法"></a>基础用法</h3><p><img src="https://r2-img.0910.men/PicGo-img/2025/04/a43d0f2.webp"></p>
-<h3 id="进阶用法"><a href="#进阶用法" class="headerlink" title="进阶用法"></a>进阶用法</h3><h4 id="彩色文本"><a href="#彩色文本" class="headerlink" title="彩色文本"></a>彩色文本</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">&quot;color: green;&quot;</span>&gt;</span>这是绿色文字<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">&quot;color: orange;&quot;</span>&gt;</span>这是橙色文字<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p><span style="color: green;">这是绿色文字</span></p>
-</blockquote>
-<h4 id="彩色背景"><a href="#彩色背景" class="headerlink" title="彩色背景"></a>彩色背景</h4><span id="more"></span>
-
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">&quot;background-color: pink; &quot;</span>&gt;</span>文字背景是粉红色/span&gt;<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p><span style="background-color: blue; ">文字背景是蓝色&#x2F;span&gt;</span></p>
-</blockquote>
-<h4 id="字体大小"><a href="#字体大小" class="headerlink" title="字体大小"></a>字体大小</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">&quot;font-size: 32px;&quot;</span>&gt;</span>这是32号字体<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p><span style="font-size: 32px;">这是 32 号字体</span></p>
-</blockquote>
-<h4 id="更换字体"><a href="#更换字体" class="headerlink" title="更换字体"></a>更换字体</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">&quot;font-family: FangSong&quot;</span>&gt;</span>改为仿宋字体<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="示例：带背景仿宋加大文字"><a href="#示例：带背景仿宋加大文字" class="headerlink" title="示例：带背景仿宋加大文字"></a>示例：带背景仿宋加大文字</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span></span></span><br><span class="line"><span class="tag">  <span class="attr">style</span>=<span class="string">&quot;font-family: FangSong; font-size: 32px;background-color: cyan; color: black;&quot;</span></span></span><br><span class="line"><span class="tag">  &gt;</span>这是仿宋字，字体加大,青色背景&lt;/span</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
-
-<p><span style="font-family: FangSong; font-size: 32px;background-color: cyan; color: black;">这是仿宋字，字体加大,青色背景</span></p>
-<h4 id="特殊字符原样输出"><a href="#特殊字符原样输出" class="headerlink" title="特殊字符原样输出"></a>特殊字符原样输出</h4><p>如果想打出 Markdown 语法已经占用的字符，比如 *，#，| 等该怎么办？简单，在这些字符前加 上反斜线 \ 就好了，如 *，#，| 等。</p>
-<h4 id="如何分行"><a href="#如何分行" class="headerlink" title="如何分行"></a>如何分行</h4><p>通常当你输入一段文字时，Markdown 并不会按回车符 (Enter) 进行分行。如果你希望换行，你可以在行尾加上两个以上的空格，然后按 Enter 键。如果你希望强制换行，可以在行尾加上两个以上的反斜线，然后按 Enter 键。</p>
-<h4 id="生成目录"><a href="#生成目录" class="headerlink" title="生成目录"></a>生成目录</h4><p>自动生成目录非常简单，只需要在恰当的位置添加 [TOC] 符号，凡是以#定义的标题都会被编排到目录中。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">[TOC] # 一级标题 ## 二级标题 ### 三级标题</span><br></pre></td></tr></table></figure>
-
-<hr>
-]]></content>
-      <categories>
-        <category>笔记</category>
-      </categories>
-      <tags>
-        <tag>笔记</tag>
-        <tag>MarkDown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>排版测试</title>
-    <url>/2010/04/07/%E6%8E%92%E7%89%88%E6%B5%8B%E8%AF%95/</url>
-    <content><![CDATA[<h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><p>&#x3D;&#x3D;高&#x3D;&#x3D;</p>
-<ul>
-<li>无序列表</li>
-<li>无序列表</li>
-</ul>
-<p>有序列表</p>
-<ol>
-<li>有序列表</li>
-<li>有序列表</li>
-</ol>
-<blockquote>
-<p>引用</p>
-</blockquote>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Test</span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello World&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://www.bilibili.com/video/BV1si4y1472o/?spm_id_from=333.788.recommend_more_video.1&vd_source=9f35f0f61bfbcac4a37665882d9be28d">这是一个链接</a></p>
-<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/202302102233691.png"></p>
-]]></content>
-      <categories>
-        <category>笔记</category>
-      </categories>
-      <tags>
-        <tag>MarkDown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>推荐几个高清古画网站</title>
-    <url>/2025/04/14/%E6%8E%A8%E8%8D%90%E5%87%A0%E4%B8%AA%E9%AB%98%E6%B8%85%E5%8F%A4%E7%94%BB%E7%BD%91%E7%AB%99/</url>
-    <content><![CDATA[<p>1-中华珍宝馆 <a href="http://www.ltfc.net/">http://www.ltfc.net/</a></p>
-<p>2-三典轩 <a href="http://www.3zitie.cn/">http://www.3zitie.cn/</a> 商业网站，需要付费</p>
-<p>3-书格 <a href="https://new.shuge.org/collection/painting/">https://new.shuge.org/collection/painting/</a> 每个人都能自由地看到我们的文明</p>
-<p>4-光明之门 <a href="http://www.gmzm.org/">http://www.gmzm.org/</a></p>
-<p>5-故宫名画记 <a href="https://minghuaji.dpm.org.cn/">https://minghuaji.dpm.org.cn/</a></p>
-<p>6-浮世绘检索 <a href="https://ja.ukiyo-e.org/">https://ja.ukiyo-e.org/</a></p>
-<p>7-昵图网 <a href="https://www.nipic.com/">https://www.nipic.com/</a></p>
-<p>8-数字多宝阁 <a href="https://www.dpm.org.cn/shuziduobaoge.html">https://www.dpm.org.cn/shuziduobaoge.html</a></p>
-]]></content>
-      <categories>
-        <category>网站推荐</category>
-      </categories>
-      <tags>
-        <tag>古画</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>工地花飞</title>
-    <url>/2023/02/08/%E5%B7%A5%E5%9C%B0%E8%8A%B1%E9%A3%9E/</url>
-    <content><![CDATA[<h3 id="工地花飞"><a href="#工地花飞" class="headerlink" title="工地花飞"></a>工地花飞</h3><p>最近在工地，闲来无事，飞了一下，感觉还不错，记录一下。</p>
-  <video  height="auto" controls>
-     <source src="https://r2-img.0910.men/video/fpv1.mp4" type="video/mp4">
-   </video>]]></content>
-      <categories>
-        <category>视频</category>
-      </categories>
-      <tags>
-        <tag>视频</tag>
-        <tag>FPV</tag>
       </tags>
   </entry>
   <entry>
@@ -522,22 +373,6 @@
       </categories>
   </entry>
   <entry>
-    <title>湖畔休闲飞</title>
-    <url>/2021/06/18/%E6%B9%96%E7%95%94%E4%BC%91%E9%97%B2%E9%A3%9E/</url>
-    <content><![CDATA[  <video  height="auto" controls>
-     <source src="https://r2-img.0910.men/video/FPV%E4%BC%91%E9%97%B2%E9%A3%9E.mp4" type="video/mp4">
-   </video>
-]]></content>
-      <categories>
-        <category>视频</category>
-      </categories>
-      <tags>
-        <tag>视频</tag>
-        <tag>FPV</tag>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>柏社古窑</title>
     <url>/2024/08/08/%E6%9F%8F%E7%A4%BE%E5%8F%A4%E7%AA%91/</url>
     <content><![CDATA[   <video  height="auto" controls>
@@ -557,6 +392,157 @@
       </tags>
   </entry>
   <entry>
+    <title>七月蝉山</title>
+    <url>/2024/07/02/%E4%B8%83%E6%9C%88%E8%9D%89%E5%B1%B1/</url>
+    <content><![CDATA[  <video  height="auto" controls>
+     <source src="https://r2-img.0910.men/video/%E4%B8%83%E6%9C%88.mp4" type="video/mp4">
+   </video>
+]]></content>
+      <categories>
+        <category>视频</category>
+      </categories>
+      <tags>
+        <tag>视频</tag>
+        <tag>FPV</tag>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>趵突泉</title>
+    <url>/2023/08/08/%E8%B6%B5%E7%AA%81%E6%B3%89/</url>
+    <content><![CDATA[  <video  height="auto" controls>
+     <source src="https://r2-img.0910.men/video/%E8%B6%B5%E7%AA%81%E6%B3%89.mp4" type="video/mp4">
+   </video>]]></content>
+      <categories>
+        <category>视频</category>
+      </categories>
+      <tags>
+        <tag>视频</tag>
+        <tag>生活</tag>
+        <tag>旅游</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>工地花飞</title>
+    <url>/2023/02/08/%E5%B7%A5%E5%9C%B0%E8%8A%B1%E9%A3%9E/</url>
+    <content><![CDATA[<h3 id="工地花飞"><a href="#工地花飞" class="headerlink" title="工地花飞"></a>工地花飞</h3><p>最近在工地，闲来无事，飞了一下，感觉还不错，记录一下。</p>
+  <video  height="auto" controls>
+     <source src="https://r2-img.0910.men/video/fpv1.mp4" type="video/mp4">
+   </video>]]></content>
+      <categories>
+        <category>视频</category>
+      </categories>
+      <tags>
+        <tag>视频</tag>
+        <tag>FPV</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MarkDown必备插件</title>
+    <url>/2022/04/09/MarkDown%E5%BF%85%E5%A4%87%E6%8F%92%E4%BB%B6/</url>
+    <content><![CDATA[<h3 id="Markdown-All-in-One-emsp-作者主页"><a href="#Markdown-All-in-One-emsp-作者主页" class="headerlink" title="Markdown All in One&emsp;作者主页"></a><span style="color: green;">Markdown All in One</span>&emsp;<a href="https://handbrake.fr/" title="进入官网">作者主页</a></h3><blockquote>
+<p>Markdown All in One 是一款功能强大的 Markdown 编辑器插件，专为 Visual Studio Code（VSCode）设计，旨在提升 Markdown 文档的编写和编辑效率。这款插件集成了多种实用功能和快捷键，适用于技术文档、博客文章、笔记等多种场景。</p>
+</blockquote>
+<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/PixPin_2025-04-09_17-45-19.png" alt="作者主页图片"></p>
+<span id="more"></span>
+<details>
+    <summary>核心功能</summary>
+
+<ul>
+<li>快捷键支持：Markdown All in One 提供了丰富的快捷键操作，如加粗、斜体、删除线、插入链接、插入图片、插入表格等，方便用户快速编辑文档。</li>
+<li>自动补全：插件支持自动补全功能，包括 Markdown 语法、代码块、标题等，提高编写效率。</li>
+<li>代码块语法高亮：插件支持多种编程语言的代码块语法高亮，方便用户查看和编辑代码。</li>
+<li>实时预览：插件支持实时预览 Markdown 文档，方便用户查看文档效果。</li>
+<li>目录生成与更新：用户可以通过快捷键（如 Ctrl + Shift + P）快速创建或更新文档目录，方便导航和组织内容。</li>
+<li>数学公式支持：插件支持 LaTeX 数学公式的插入和渲染，方便用户在 Markdown 文档中插入复杂的数学公式。</li>
+<li>自定义快捷键：用户可以根据自己的习惯自定义快捷键，方便快速执行常用操作。</li>
+<li>支持多种 Markdown 解析器：插件支持多种 Markdown 解析器，如 CommonMark、GitHub Flavored Markdown 等，用户可以根据需求选择合适的解析器。</li>
+<li>支持多种主题：插件支持多种主题，包括默认主题和第三方主题，用户可以根据自己的喜好选择合适的主题。</li>
+<li>支持多种扩展插件：插件支持多种扩展插件，如 MarkdownLint、MarkdownTOC 等，用户可以根据需求安装和使用这些扩展插件。</li>
+<li>支持多种文件格式：插件支持多种文件格式，如 Markdown、HTML、PDF 等，用户可以根据需求导出文档。</li>
+<li>支持多种语言：插件支持多种语言，包括中文、英文等，用户可以根据自己的语言习惯选择合适的语言。</li>
+</ul>
+ </details>
+
+<p><strong>常用快捷键</strong></p>
+<table>
+<thead>
+<tr>
+<th>功能</th>
+<th align="center">快捷键</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>加粗</td>
+<td align="center">Ctrl + B</td>
+<td>将选中的文本加粗</td>
+</tr>
+<tr>
+<td>斜体</td>
+<td align="center">Ctrl + I</td>
+<td>将选中的文本变为斜体</td>
+</tr>
+<tr>
+<td>删除线</td>
+<td align="center">Alt + S</td>
+<td>将选中的文本添加删除线</td>
+</tr>
+<tr>
+<td>插入链接</td>
+<td align="center">Ctrl + V</td>
+<td>插入一个链接</td>
+</tr>
+<tr>
+<td>插入表格</td>
+<td align="center">Ctrl + T</td>
+<td>插入一个表格</td>
+</tr>
+<tr>
+<td>插入代码块</td>
+<td align="center">Ctrl + Shift + K</td>
+<td>插入一个代码块</td>
+</tr>
+<tr>
+<td>切换标题</td>
+<td align="center">Ctrl + Shift + [</td>
+<td>切换当前行的标题级别</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>软件推荐</category>
+      </categories>
+      <tags>
+        <tag>MarkDown</tag>
+        <tag>软件推荐&quot;</tag>
+        <tag>工具</tag>
+        <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ERROR Deployer not found:git</title>
+    <url>/2022/04/09/ERROR/</url>
+    <content><![CDATA[<blockquote>
+<p>在使用 Hexo 进行网站部署时，遇到“ERROR Deployer not found: git”错误是比较常见的问题。该错误通常由以下几个原因引起，并且有相应的解决方法：</p>
+</blockquote>
+<h3 id="Git-未安装：确保你的电脑上已经安装了-Git。如果没有安装，可以通过以下命令在终端中安装-Git："><a href="#Git-未安装：确保你的电脑上已经安装了-Git。如果没有安装，可以通过以下命令在终端中安装-Git：" class="headerlink" title="Git 未安装：确保你的电脑上已经安装了 Git。如果没有安装，可以通过以下命令在终端中安装 Git："></a>Git 未安装：确保你的电脑上已经安装了 Git。如果没有安装，可以通过以下命令在终端中安装 Git：</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt-get install git</span><br></pre></td></tr></table></figure>
+
+<h4 id="Git-未配置：确保你的-Git-已经正确配置。可以通过以下命令检查-Git-配置："><a href="#Git-未配置：确保你的-Git-已经正确配置。可以通过以下命令检查-Git-配置：" class="headerlink" title="Git 未配置：确保你的 Git 已经正确配置。可以通过以下命令检查 Git 配置："></a>Git 未配置：确保你的 Git 已经正确配置。可以通过以下命令检查 Git 配置：</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br><span class="line">git config --global user.email &quot;youremail@example.com&quot;</span><br></pre></td></tr></table></figure>
+
+<h4 id="未安装-hexo-deployer-git-插件：确保你的-Hexo-已经安装了-hexo-deployer-git-插件。CD-到博客根目录-通过以下命令安装-hexo-deployer-git-插件："><a href="#未安装-hexo-deployer-git-插件：确保你的-Hexo-已经安装了-hexo-deployer-git-插件。CD-到博客根目录-通过以下命令安装-hexo-deployer-git-插件：" class="headerlink" title="未安装 hexo-deployer-git 插件：确保你的 Hexo 已经安装了 hexo-deployer-git 插件。CD 到博客根目录,通过以下命令安装 hexo-deployer-git 插件："></a>未安装 hexo-deployer-git 插件：确保你的 Hexo 已经安装了 hexo-deployer-git 插件。CD 到博客根目录,通过以下命令安装 hexo-deployer-git 插件：</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+        <tag>Hexo</tag>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>湖畔骑行</title>
     <url>/2021/08/05/%E6%B9%96%E7%95%94%E9%AA%91%E8%A1%8C/</url>
     <content><![CDATA[  <video  height="auto" controls>
@@ -572,87 +558,19 @@
       </tags>
   </entry>
   <entry>
-    <title>汉宫春晓图</title>
-    <url>/2025/04/15/%E6%B1%89%E5%AE%AB%E6%98%A5%E6%99%93%E5%9B%BE/</url>
-    <content><![CDATA[<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/17010201.jpg"></p>
-<blockquote>
-<p>《汉宫春晓图》是明代画家仇英创作的一幅绢本重彩仕女画，被誉为中国 “重彩仕女第一长卷”。此画描绘了汉宫春晓的情景，画面中宫女们身着华服，妆点艳丽，在春光中忙碌着，展现了当时宫廷生活的繁华与热闹。</p>
-</blockquote>
-<details style="font-family: 仿宋, FangSong; font-size: 1.2em;">
-<summary>详细介绍</summary>  
-基本信息
-
-<ul>
-<li><p>尺寸：纵 30.6 厘米，横 574.5 厘米。</p>
-</li>
-<li><p>收藏地：现收藏于中国台北故宫博物院。</p>
-</li>
-<li><p>创作时间：大约于嘉靖十九年至二十三年（1540—1544 年）间创作完成。</p>
-</li>
-<li><p>画面内容</p>
-<ul>
-<li>人物众多：画面共描绘了 113 人，包括后妃、宫娥、皇子、太监、画师等，人物衣着纤华，姿态各异。</li>
-<li>场景丰富：用手卷的形式描绘暮春时节宫闱之中的日常琐事场景，如妆扮、浇灌、折枝、插花、饲养孔雀、歌舞、弹唱、吹奏、围炉、下棋、读书、斗草、对镜、观画、戏婴、送食、挥扇等。</li>
-<li>布局精妙：从 “汉宫” 外景画起，晓烟笼罩柳梢，花柳点出 “春”，展烟带出 “晓”。入宫墙内，可见渠水、鸳鸯白鹏，宫室内外人物活动丰富多样，建筑楼阁台榭、栋宇彩绘与山石花木穿插其间，构成有机整体。</li>
-</ul>
-</li>
-<li><p>艺术特色</p>
-<ul>
-<li>构图：一排排的宫廷房屋从右向左贯穿于画面，房屋一半只露于画面上，未画出房顶，增大了画面的横向空间，体现了仇英对 “界画” 的高超造诣，楼台殿阁、画栋雕梁造型美，具备古雅厚实之趣。</li>
-<li>人物：人物形象与背景完美融合，使画面有情节性且人物形象丰满。众多仕女欢乐地参与各种休闲活动，服饰含蓄蕴藉，追求幽淡高雅格调，具有 “雅俗共赏”“文质相兼” 的艺术特色。</li>
-<li>设色：采用工笔重彩笔法，整个画面鲜丽雅致，利用红色搭配，使仕女服饰、生活用品等带有不同程度的红色，错落有致，还采用特有的青绿山水画法，融合渲染、点皴等技法，红与绿融合，再以朱红暖色调宫殿为背景衬托，让画面充满朝气和欢乐。</li>
-<li>线条：总体特点是细而略有变化的线条，用细线准确塑造形体，女性角色用细而匀的线条勾勒面部，突出仕女柔嫩娇美的特点，仕女服装线条用细微变化和动势，勾勒出服饰轻盈飘逸的特点；男性角色面部线条更粗犷有力，服装线条也更遒劲有力，转折和提按明显，突出人物特点，与建筑和山石树木的用笔和皴擦形成对比，使整幅画卷层次丰富。</li>
-</ul>
-</li>
-<li><p>文化意义</p>
-<ul>
-<li>审美体现：画题 “汉宫春晓” 概括了绘画的题材与内容，表达了仇英对宫廷浮华美好生活的赞美，同时也体现了当时文人的审美观念和趣味，主观意趣与自然之境相结合，整体渲染出娴雅幽然的境界，处处显示着人们积极向上、热爱生活的人文思想。</li>
-<li>历史价值：以艺术的形式展现了明代宫廷生活的面貌，反映了那个时代的社会风俗和审美趣味，为后人了解古代宫廷文化、社会生活等提供了宝贵的视觉资料，具有较高的历史文化价值。</li>
-</ul>
-</details>
-
-
-<span id="more"></span></li>
-</ul>
-<p><strong>横幅全卷</strong></p>
-<p>  <img src="https://r2-img.0910.men/PicGo-img/2025/04/286614834_5_20240728014258435.jpg"></p>
-<p><strong>分段</strong></p>
-<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/17009998.jpg"></p>
-<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/17009999.jpg"></p>
-<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/17010000.jpg"></p>
-<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/17010001.jpg"></p>
-<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/17010002.jpg"></p>
-<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/17010003.jpg"></p>
-<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/17010004.jpg"></p>
-<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/1701005.jpg"></p>
-<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/17010006.jpg"></p>
-<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/17010007.jpg"></p>
-<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/17010008.jpg"></p>
-<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/17010009.jpg"></p>
-<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/17010010.jpg"></p>
+    <title>湖畔休闲飞</title>
+    <url>/2021/06/18/%E6%B9%96%E7%95%94%E4%BC%91%E9%97%B2%E9%A3%9E/</url>
+    <content><![CDATA[  <video  height="auto" controls>
+     <source src="https://r2-img.0910.men/video/FPV%E4%BC%91%E9%97%B2%E9%A3%9E.mp4" type="video/mp4">
+   </video>
 ]]></content>
       <categories>
-        <category>古画欣赏</category>
+        <category>视频</category>
       </categories>
       <tags>
-        <tag>古画</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>获取网站favicon.ico图标</title>
-    <url>/2015/12/09/%E8%8E%B7%E5%8F%96%E7%BD%91%E7%AB%99favicon-ico%E5%9B%BE%E6%A0%87/</url>
-    <content><![CDATA[<p>通过 chrome 插件实现</p>
-<p><a href="https://chrome.google.com/webstore/detail/brandfetch/ecbhicmbbeeckcmhgoaiemddbfcgphhj/related">插件地址: </a></p>
-<p><a href="https://chrome.google.com/webstore/detail/brandfetch/ecbhicmbbeeckcmhgoaiemddbfcgphhj/related">https://chrome.google.com/webstore/detail/brandfetch/ecbhicmbbeeckcmhgoaiemddbfcgphhj/related</a></p>
-<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/PixPin_2025-04-09_17-35-47.png"></p>
-]]></content>
-      <categories>
-        <category>笔记</category>
-      </categories>
-      <tags>
-        <tag>笔记</tag>
-        <tag>工具</tag>
-        <tag>软件推荐</tag>
+        <tag>视频</tag>
+        <tag>FPV</tag>
+        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
@@ -705,66 +623,148 @@
       </tags>
   </entry>
   <entry>
-    <title>趵突泉</title>
-    <url>/2023/08/08/%E8%B6%B5%E7%AA%81%E6%B3%89/</url>
-    <content><![CDATA[  <video  height="auto" controls>
-     <source src="https://r2-img.0910.men/video/%E8%B6%B5%E7%AA%81%E6%B3%89.mp4" type="video/mp4">
-   </video>]]></content>
-      <categories>
-        <category>视频</category>
-      </categories>
-      <tags>
-        <tag>视频</tag>
-        <tag>生活</tag>
-        <tag>旅游</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>驱动更新软件</title>
-    <url>/2025/04/11/%E9%A9%B1%E5%8A%A8%E6%9B%B4%E6%96%B0%E8%BD%AF%E4%BB%B6/</url>
-    <content><![CDATA[<h3 id="驱动管理软件-驱动总裁-emsp-点击下载"><a href="#驱动管理软件-驱动总裁-emsp-点击下载" class="headerlink" title="驱动管理软件 驱动总裁&emsp;点击下载"></a><span style="color: green;">驱动管理软件 驱动总裁</span>&emsp;<a href="https://www.sysceo.com/">点击下载</a></h3><blockquote>
-<p>驱动总裁是一款功能强大、操作便捷且高度自定义的驱动管理工具，适合需要高效管理硬件驱动的用户。无论是日常使用还是系统封装，它都提供了强大的支持，是硬件驱动管理的优选工具。</p>
-</blockquote>
-<details>
-    <summary>功能介绍</summary>
-
-<p>功能全面：驱动总裁支持在线和离线两种模式，能够精准扫描硬件并自动匹配最佳驱动程序，同时支持多种类型的驱动包（如 WIM、WIM+、7Z 和 WIM 格式）。此外，它还内置了丰富的驱动库，涵盖主板、显卡、声卡、网卡等设备，适用于笔记本、台式机以及苹果电脑的 Windows 系统。</p>
-<p>操作简便：用户可以通过一键智能安装功能快速完成驱动安装，也可以通过手动自选模式进行个性化设置。此外，软件支持离线安装包和联网安装包的双模式安装，满足不同场景下的需求。</p>
-<p>高度自定义：用户可以自定义添加驱动程序，并创建专属驱动包，以适应特定需求。例如，用户可以根据硬件型号和操作系统版本选择合适的驱动版本。</p>
-<p>兼容性与稳定性：驱动总裁支持从 WinXP 到 Win10 等多个 Windows 操作系统，包括 PE 环境和苹果电脑的 Bootcamp 模式，确保了广泛的硬件兼容性。此外，软件还支持离线驱动库的实时更新，即使在无网络环境下也能获取最新驱动。</p>
-<p>无广告与无绑定：驱动总裁是一款无广告、无插件的绿色软件，不绑定推广，用户可以放心使用。</p>
-<p>版本多样性：驱动总裁有多个版本可供选择，包括免扫码登录版、单文件版、网卡版等，以满足不同用户的需求。例如，免扫码登录版免去了扫码登录的麻烦，而单文件版则更加轻便易用<br>。</p>
-<p>一款优秀的驱动安装软件，驱动总裁，最新免扫码登录 2.10.0.1 版本免费下载！<br>00:59</p>
-<p>一款优秀的驱动安装工具，驱动总裁，最新免扫码登录 2.17 版本！速度超级块~<br>01:37</p>
-<p>安全性与可靠性：驱动总裁通过了 360 检测、天擎检测和电脑管家的检测，是一款安全可靠的驱动管理工具。</p>
-<p>更新与优化：软件不断更新，以适应新硬件的驱动需求。例如，最新版本增加了对英特尔 10 代 CPU、USB3.X 和核显驱动的支持，同时修复了多项已知问题，提升了用户体验</p>
- </details>
-
-<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/PixPin_2025-04-11_13-19-30.png"></p>
+    <title>获取网站favicon.ico图标</title>
+    <url>/2015/12/09/%E8%8E%B7%E5%8F%96%E7%BD%91%E7%AB%99favicon-ico%E5%9B%BE%E6%A0%87/</url>
+    <content><![CDATA[<p>通过 chrome 插件实现</p>
+<p><a href="https://chrome.google.com/webstore/detail/brandfetch/ecbhicmbbeeckcmhgoaiemddbfcgphhj/related">插件地址: </a></p>
+<p><a href="https://chrome.google.com/webstore/detail/brandfetch/ecbhicmbbeeckcmhgoaiemddbfcgphhj/related">https://chrome.google.com/webstore/detail/brandfetch/ecbhicmbbeeckcmhgoaiemddbfcgphhj/related</a></p>
+<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/PixPin_2025-04-09_17-35-47.png"></p>
 ]]></content>
       <categories>
-        <category>软件推荐</category>
+        <category>笔记</category>
       </categories>
       <tags>
-        <tag>工具软件</tag>
-        <tag>驱动管理</tag>
+        <tag>工具</tag>
+        <tag>笔记</tag>
+        <tag>软件推荐</tag>
       </tags>
   </entry>
   <entry>
-    <title>陈炉古镇</title>
-    <url>/2025/05/01/%E9%99%88%E7%82%89%E5%8F%A4%E9%95%87/</url>
-    <content><![CDATA[<p><img src="https://r2-img.0910.men/PicGo-img/2025/05/IMG_20250501_191019.jpg"></p>
+    <title>Markdown 笔记</title>
+    <url>/2012/05/09/Markdown%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h3 id="基础用法"><a href="#基础用法" class="headerlink" title="基础用法"></a>基础用法</h3><p><img src="https://r2-img.0910.men/PicGo-img/2025/04/a43d0f2.webp"></p>
+<h3 id="进阶用法"><a href="#进阶用法" class="headerlink" title="进阶用法"></a>进阶用法</h3><h4 id="彩色文本"><a href="#彩色文本" class="headerlink" title="彩色文本"></a>彩色文本</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">&quot;color: green;&quot;</span>&gt;</span>这是绿色文字<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">&quot;color: orange;&quot;</span>&gt;</span>这是橙色文字<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><span style="color: green;">这是绿色文字</span></p>
+</blockquote>
+<h4 id="彩色背景"><a href="#彩色背景" class="headerlink" title="彩色背景"></a>彩色背景</h4><span id="more"></span>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">&quot;background-color: pink; &quot;</span>&gt;</span>文字背景是粉红色/span&gt;<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><span style="background-color: blue; ">文字背景是蓝色&#x2F;span&gt;</span></p>
+</blockquote>
+<h4 id="字体大小"><a href="#字体大小" class="headerlink" title="字体大小"></a>字体大小</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">&quot;font-size: 32px;&quot;</span>&gt;</span>这是32号字体<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><span style="font-size: 32px;">这是 32 号字体</span></p>
+</blockquote>
+<h4 id="更换字体"><a href="#更换字体" class="headerlink" title="更换字体"></a>更换字体</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">&quot;font-family: FangSong&quot;</span>&gt;</span>改为仿宋字体<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="示例：带背景仿宋加大文字"><a href="#示例：带背景仿宋加大文字" class="headerlink" title="示例：带背景仿宋加大文字"></a>示例：带背景仿宋加大文字</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span></span></span><br><span class="line"><span class="tag">  <span class="attr">style</span>=<span class="string">&quot;font-family: FangSong; font-size: 32px;background-color: cyan; color: black;&quot;</span></span></span><br><span class="line"><span class="tag">  &gt;</span>这是仿宋字，字体加大,青色背景&lt;/span</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+
+<p><span style="font-family: FangSong; font-size: 32px;background-color: cyan; color: black;">这是仿宋字，字体加大,青色背景</span></p>
+<h4 id="特殊字符原样输出"><a href="#特殊字符原样输出" class="headerlink" title="特殊字符原样输出"></a>特殊字符原样输出</h4><p>如果想打出 Markdown 语法已经占用的字符，比如 *，#，| 等该怎么办？简单，在这些字符前加 上反斜线 \ 就好了，如 *，#，| 等。</p>
+<h4 id="如何分行"><a href="#如何分行" class="headerlink" title="如何分行"></a>如何分行</h4><p>通常当你输入一段文字时，Markdown 并不会按回车符 (Enter) 进行分行。如果你希望换行，你可以在行尾加上两个以上的空格，然后按 Enter 键。如果你希望强制换行，可以在行尾加上两个以上的反斜线，然后按 Enter 键。</p>
+<h4 id="生成目录"><a href="#生成目录" class="headerlink" title="生成目录"></a>生成目录</h4><p>自动生成目录非常简单，只需要在恰当的位置添加 [TOC] 符号，凡是以#定义的标题都会被编排到目录中。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">[TOC] # 一级标题 ## 二级标题 ### 三级标题</span><br></pre></td></tr></table></figure>
+
+<hr>
+]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>MarkDown</tag>
+        <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Docker安装portainer详细步骤</title>
+    <url>/2010/04/07/docker%E5%AE%89%E8%A3%85portainer%E8%AF%A6%E7%BB%86%E6%AD%A5%E9%AA%A4/</url>
+    <content><![CDATA[<p>portainer 是一款容器管理可视化界面，不想在虚拟中使用命令管理容器的小伙伴，可以选择安装 portainer 对容器进行管理，查看日志、启动、停止容器等非常方便。</p>
 <span id="more"></span>
 
-<p><img src="https://r2-img.0910.men/PicGo-img/2025/05/IMG_20250501_190925.jpg"><br><img src="https://r2-img.0910.men/PicGo-img/2025/05/IMG_20250501_190914.jpg"><br><img src="https://r2-img.0910.men/PicGo-img/2025/05/IMG_20250501_191029.jpg"><br><img src="https://r2-img.0910.men/PicGo-img/2025/05/IMG_20250501_190810.jpg"><br><img src="https://r2-img.0910.men/PicGo-img/2025/05/IMG_20250501_191222.jpg"><br><img src="https://r2-img.0910.men/PicGo-img/2025/05/IMG_20250501_191148.jpg"><br><img src="https://r2-img.0910.men/PicGo-img/2025/05/IMG_20250501_191005.jpg"></p>
+<ul>
+<li><strong>搜索 portainer 镜像</strong></li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">docker search portainer</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/202302102229804.png" alt="img"></p>
+<ul>
+<li><strong>拉取 portainer 镜像</strong></li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">docker pull portainer/portainer   #pull 标星最多的镜像（STARS数最多的）</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>启动 portainer 容器</strong></li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">docker run -d -p 9000:9000 --restart=always \</span><br><span class="line">-v /var/run/docker.sock:/var/run/docker.sock \</span><br><span class="line">--name portainer lihaixin/portainer</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>docker ps 查看容器</strong></li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">docker ps</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>查看日志</strong></li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">docker logs -f portainer</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>浏览器中 ip+端口 9000 访问</strong></li>
+</ul>
+<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/202302102233691.png"></p>
+]]></content>
+      <tags>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>排版测试</title>
+    <url>/2010/04/07/%E6%8E%92%E7%89%88%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><p>&#x3D;&#x3D;高&#x3D;&#x3D;</p>
+<ul>
+<li>无序列表</li>
+<li>无序列表</li>
+</ul>
+<p>有序列表</p>
+<ol>
+<li>有序列表</li>
+<li>有序列表</li>
+</ol>
+<blockquote>
+<p>引用</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Test</span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello World&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://www.bilibili.com/video/BV1si4y1472o/?spm_id_from=333.788.recommend_more_video.1&vd_source=9f35f0f61bfbcac4a37665882d9be28d">这是一个链接</a></p>
+<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/202302102233691.png"></p>
 ]]></content>
       <categories>
-        <category>生活</category>
+        <category>笔记</category>
       </categories>
       <tags>
-        <tag>生活</tag>
-        <tag>照片</tag>
-        <tag>陈炉古镇</tag>
+        <tag>MarkDown</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2009/01/09/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
   </entry>
 </search>
