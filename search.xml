@@ -1,43 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>NEXT主题使用笔记</title>
-    <url>/2021/04/08/NEXT%E4%B8%BB%E9%A2%98%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h3 id="加入搜索功能，添加本地自定义站点内容搜索，可以通过文字标题或文字内容关键字搜索出相应文章"><a href="#加入搜索功能，添加本地自定义站点内容搜索，可以通过文字标题或文字内容关键字搜索出相应文章" class="headerlink" title="加入搜索功能，添加本地自定义站点内容搜索，可以通过文字标题或文字内容关键字搜索出相应文章"></a>加入搜索功能，添加本地自定义站点内容搜索，可以通过文字标题或文字内容关键字搜索出相应文章</h3><h4 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h4><p>&ensp;&ensp;&ensp;&ensp;终端根目录下载插件 hexo-generator-searchdb</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
-
+    <title>陈炉古镇</title>
+    <url>/2025/05/01/%E9%99%88%E7%82%89%E5%8F%A4%E9%95%87/</url>
+    <content><![CDATA[<p><img src="https://r2-img.0910.men/PicGo-img/2025/05/IMG_20250501_191019.jpg"></p>
 <span id="more"></span>
 
-<h4 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h4><p>&ensp;&ensp;&ensp;&ensp;在主题文件夹<code>themes/next/_config.yml</code>中搜索<code>local_search</code>字段，将其<code>enable</code>字段设置为<code>true</code>。</p>
-<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/PixPin_2025-04-08_19-46-26.png"></p>
-<h4 id="在根目录-config-yml-中任意行插入以下内容："><a href="#在根目录-config-yml-中任意行插入以下内容：" class="headerlink" title="在根目录_config.yml 中任意行插入以下内容："></a>在根目录_config.yml 中任意行插入以下内容：</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  <span class="built_in">limit</span>: 10000</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/PixPin_2025-04-08_19-41-07.png"></p>
-<h3 id="置顶文章"><a href="#置顶文章" class="headerlink" title="置顶文章"></a>置顶文章</h3><h4 id="卸载原有插件卸载-hexo-generator-index-后安装新插件-hexo-generator-index-pin-top"><a href="#卸载原有插件卸载-hexo-generator-index-后安装新插件-hexo-generator-index-pin-top" class="headerlink" title="卸载原有插件卸载 hexo-generator-index 后安装新插件 hexo-generator-index-pin-top"></a>卸载原有插件卸载 hexo-generator-index 后安装新插件 hexo-generator-index-pin-top</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm r hexo-generator-index</span><br><span class="line">npm i hexo-generator-index-pin-top -S</span><br></pre></td></tr></table></figure>
-
-<h4 id="在文章中添加置顶信息"><a href="#在文章中添加置顶信息" class="headerlink" title="在文章中添加置顶信息"></a>在文章中添加置顶信息</h4><p>&ensp;&ensp;&ensp;&ensp;在需要置顶的文章的<code>Front-matter</code>中添加<code>top</code>字段，并设置一个值（值越大，置顶越靠前）,或者设为 true，默认为 1。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 置顶文章标题</span><br><span class="line"><span class="built_in">date</span>: 2025-04-08 14:29:10</span><br><span class="line">tags:</span><br><span class="line">top: 1</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<h4 id="添加置顶标志-如果不添加也能生效，不过没有置顶字样"><a href="#添加置顶标志-如果不添加也能生效，不过没有置顶字样" class="headerlink" title="添加置顶标志,如果不添加也能生效，不过没有置顶字样"></a>添加置顶标志,如果不添加也能生效，不过没有置顶字样</h4><p>&ensp;&ensp;&ensp;&ensp;在主题文件夹 <code>themes/next/layout/_macro/post.swig</code>中搜索<code>post-meta</code>字段，在<code>&lt;div class=&quot;post-meta&quot;&gt;</code>标签中添加以下代码：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&#123;% <span class="keyword">if</span> post.top %&#125;</span><br><span class="line">  &lt;span class=<span class="string">&quot;post-meta-item-icon&quot;</span>&gt;</span><br><span class="line">  &lt;i class=<span class="string">&quot;fa fa-thumb-tack&quot;</span>&gt;&lt;/i&gt;</span><br><span class="line">  &lt;/span&gt;S</span><br><span class="line">  &lt;font color=red&gt;置顶&lt;/font&gt;</span><br><span class="line">  &lt;span class=<span class="string">&quot;post-meta-divider&quot;</span>&gt;|&lt;/span&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/Snipaste_2025-04-08_18-09-10.png"></p>
-<h3 id="代码块去掉行号"><a href="#代码块去掉行号" class="headerlink" title="代码块去掉行号"></a>代码块去掉行号</h3><p>&ensp;&ensp;&ensp;&ensp;在博客根目录_config.yml 中搜索<code>line-numbers</code>字段，将<code>line-numbers</code>字段设置为<code>false</code>，效果如下：</p>
-<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/PixPin_2025-04-08_19-43-11.png"></p>
-<h3 id="网站底部加入统计"><a href="#网站底部加入统计" class="headerlink" title="网站底部加入统计"></a>网站底部加入统计</h3><h4 id="打开-themes-next-layout-partial-footer-njk-文件-在文件的最后位置添加以下代码："><a href="#打开-themes-next-layout-partial-footer-njk-文件-在文件的最后位置添加以下代码：" class="headerlink" title="打开 themes\next\layout_partial\footer.njk 文件,在文件的最后位置添加以下代码："></a>打开 themes\next\layout_partial\footer.njk 文件,在文件的最后位置添加以下代码：</h4><figure class="highlight css"><table><tr><td class="code"><pre><span class="line">&lt;<span class="selector-tag">div</span> class=&quot;<span class="selector-tag">footer</span>-info-<span class="attribute">container</span>&quot;&gt;</span><br><span class="line">    &lt;<span class="selector-tag">div</span> class=&quot;site-running-<span class="selector-tag">time</span>&quot;&gt;</span><br><span class="line">        &lt;<span class="selector-tag">span</span> id=&quot;timeDate&quot;&gt;载入天数...&lt;/<span class="selector-tag">span</span>&gt;&lt;<span class="selector-tag">span</span> id=&quot;times&quot;&gt;载入时分秒...&lt;/<span class="selector-tag">span</span>&gt;</span><br><span class="line">        &lt;script&gt;</span><br><span class="line">            <span class="selector-tag">var</span> now = new Date();</span><br><span class="line">            function createtime() &#123;</span><br><span class="line">                // 在此处修改你的建站时间</span><br><span class="line">                <span class="selector-tag">var</span> grt = new Date(&quot;<span class="number">08</span>/<span class="number">10</span>/<span class="number">2020</span> <span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span><span class="string">&quot;);</span></span><br><span class="line"><span class="string">                now.setTime(now.getTime() + 250);</span></span><br><span class="line"><span class="string">                days = (now - grt) / 1000 / 60 / 60 / 24;</span></span><br><span class="line"><span class="string">                dnum = Math.floor(days);</span></span><br><span class="line"><span class="string">                hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum);</span></span><br><span class="line"><span class="string">                hnum = Math.floor(hours);</span></span><br><span class="line"><span class="string">                if (String(hnum).length == 1) &#123;</span></span><br><span class="line"><span class="string">                    hnum = &quot;</span><span class="number">0</span><span class="string">&quot; + hnum;</span></span><br><span class="line"><span class="string">                &#125;</span></span><br><span class="line"><span class="string">                minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);</span></span><br><span class="line"><span class="string">                mnum = Math.floor(minutes);</span></span><br><span class="line"><span class="string">                if (String(mnum).length == 1) &#123;</span></span><br><span class="line"><span class="string">                    mnum = &quot;</span><span class="number">0</span><span class="string">&quot; + mnum;</span></span><br><span class="line"><span class="string">                &#125;</span></span><br><span class="line"><span class="string">                seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);</span></span><br><span class="line"><span class="string">                snum = Math.round(seconds);</span></span><br><span class="line"><span class="string">                if (String(snum).length == 1) &#123;</span></span><br><span class="line"><span class="string">                    snum = &quot;</span><span class="number">0</span><span class="string">&quot; + snum;</span></span><br><span class="line"><span class="string">                &#125;</span></span><br><span class="line"><span class="string">                document.getElementById(&quot;</span>timeDate<span class="string">&quot;).innerHTML = &quot;</span>已运行 <span class="string">&quot; + dnum + &quot;</span> 天 <span class="string">&quot;;</span></span><br><span class="line"><span class="string">                document.getElementById(&quot;</span>times<span class="string">&quot;).innerHTML = hnum + &quot;</span> 小时 <span class="string">&quot; + mnum + &quot;</span> 分 <span class="string">&quot; + snum + &quot;</span> 秒<span class="string">&quot;;</span></span><br><span class="line"><span class="string">            &#125;</span></span><br><span class="line"><span class="string">            setInterval(&quot;</span><span class="built_in">createtime</span>()<span class="string">&quot;, 250);</span></span><br><span class="line"><span class="string">        &lt;/script&gt;</span></span><br><span class="line"><span class="string">    &lt;/div&gt;</span></span><br><span class="line"><span class="string">    &lt;div class=&quot;</span>site-visitor-count<span class="string">&quot;&gt;</span></span><br><span class="line"><span class="string">        &lt;span class=&quot;</span>post-meta-divider<span class="string">&quot;&gt;|&lt;/span&gt;</span></span><br><span class="line"><span class="string">        &lt;span id=&quot;</span>busuanzi_container_site_pv<span class="string">&quot;&gt;&amp;emsp;总访问量&lt;span id=&quot;</span>busuanzi_value_site_pv<span class="string">&quot;&gt;&lt;/span&gt;次&lt;/span&gt;</span></span><br><span class="line"><span class="string">    &lt;/div&gt;</span></span><br><span class="line"><span class="string">&lt;/div&gt;</span></span><br><span class="line"><span class="string">&lt;script async src=&quot;</span>//busuanzi.ibruce.info/busuanzi/<span class="number">2.3</span>/busuanzi.pure.mini.js<span class="string">&quot;&gt;&lt;/script&gt;</span></span><br><span class="line"><span class="string">&lt;style&gt;</span></span><br><span class="line"><span class="string">    .footer-info-container &#123;</span></span><br><span class="line"><span class="string">        display: flex;</span></span><br><span class="line"><span class="string">        justify-content: center;</span></span><br><span class="line"><span class="string">        align-items: center;</span></span><br><span class="line"><span class="string">    &#125;</span></span><br><span class="line"><span class="string">    .site-running-time,</span></span><br><span class="line"><span class="string">    .site-visitor-count &#123;</span></span><br><span class="line"><span class="string">        margin: 0 10px;</span></span><br><span class="line"><span class="string">        font-size: 0.9em; /* 调整字体大小为原来的 0.9 倍，达到小一号的效果 */</span></span><br><span class="line"><span class="string">    &#125;</span></span><br><span class="line"><span class="string">&lt;/style&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="打开-Next-主题的配置文件-themes-next-config-yml，找到-footer-字段，加入配置-counter-true"><a href="#打开-Next-主题的配置文件-themes-next-config-yml，找到-footer-字段，加入配置-counter-true" class="headerlink" title="打开 Next 主题的配置文件 themes&#x2F;next&#x2F;_config.yml，找到 footer 字段，加入配置 counter: true"></a>打开 Next 主题的配置文件 themes&#x2F;next&#x2F;_config.yml，找到 footer 字段，加入配置 counter: true</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">counter: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/PixPin_2025-04-09_11-45-30.png" alt="如图所示"></p>
+<p><img src="https://r2-img.0910.men/PicGo-img/2025/05/IMG_20250501_190925.jpg"><br><img src="https://r2-img.0910.men/PicGo-img/2025/05/IMG_20250501_190914.jpg"><br><img src="https://r2-img.0910.men/PicGo-img/2025/05/IMG_20250501_191029.jpg"><br><img src="https://r2-img.0910.men/PicGo-img/2025/05/IMG_20250501_190810.jpg"><br><img src="https://r2-img.0910.men/PicGo-img/2025/05/IMG_20250501_191222.jpg"><br><img src="https://r2-img.0910.men/PicGo-img/2025/05/IMG_20250501_191148.jpg"><br><img src="https://r2-img.0910.men/PicGo-img/2025/05/IMG_20250501_191005.jpg"></p>
 ]]></content>
       <categories>
-        <category>笔记</category>
+        <category>生活</category>
       </categories>
       <tags>
-        <tag>笔记</tag>
-        <tag>Hexo</tag>
-        <tag>Next</tag>
-        <tag>教程</tag>
+        <tag>生活</tag>
+        <tag>照片</tag>
+        <tag>陈炉古镇</tag>
       </tags>
   </entry>
   <entry>
@@ -55,23 +32,6 @@
         <tag>生活</tag>
         <tag>城隍庙</tag>
         <tag>照片</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>陈炉古镇</title>
-    <url>/2025/05/01/%E9%99%88%E7%82%89%E5%8F%A4%E9%95%87/</url>
-    <content><![CDATA[<p><img src="https://r2-img.0910.men/PicGo-img/2025/05/IMG_20250501_191019.jpg"></p>
-<span id="more"></span>
-
-<p><img src="https://r2-img.0910.men/PicGo-img/2025/05/IMG_20250501_190925.jpg"><br><img src="https://r2-img.0910.men/PicGo-img/2025/05/IMG_20250501_190914.jpg"><br><img src="https://r2-img.0910.men/PicGo-img/2025/05/IMG_20250501_191029.jpg"><br><img src="https://r2-img.0910.men/PicGo-img/2025/05/IMG_20250501_190810.jpg"><br><img src="https://r2-img.0910.men/PicGo-img/2025/05/IMG_20250501_191222.jpg"><br><img src="https://r2-img.0910.men/PicGo-img/2025/05/IMG_20250501_191148.jpg"><br><img src="https://r2-img.0910.men/PicGo-img/2025/05/IMG_20250501_191005.jpg"></p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-        <tag>照片</tag>
-        <tag>陈炉古镇</tag>
       </tags>
   </entry>
   <entry>
@@ -514,10 +474,10 @@
         <category>软件推荐</category>
       </categories>
       <tags>
+        <tag>笔记</tag>
         <tag>MarkDown</tag>
         <tag>软件推荐&quot;</tag>
         <tag>工具</tag>
-        <tag>笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -537,9 +497,9 @@
         <category>笔记</category>
       </categories>
       <tags>
-        <tag>笔记</tag>
         <tag>Hexo</tag>
         <tag>git</tag>
+        <tag>笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -571,6 +531,46 @@
         <tag>视频</tag>
         <tag>FPV</tag>
         <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>NEXT主题使用笔记</title>
+    <url>/2021/04/08/NEXT%E4%B8%BB%E9%A2%98%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h3 id="加入搜索功能，添加本地自定义站点内容搜索，可以通过文字标题或文字内容关键字搜索出相应文"><a href="#加入搜索功能，添加本地自定义站点内容搜索，可以通过文字标题或文字内容关键字搜索出相应文" class="headerlink" title="加入搜索功能，添加本地自定义站点内容搜索，可以通过文字标题或文字内容关键字搜索出相应文"></a>加入搜索功能，添加本地自定义站点内容搜索，可以通过文字标题或文字内容关键字搜索出相应文</h3><h4 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h4><p>&ensp;&ensp;&ensp;&ensp;终端根目录下载插件 hexo-generator-searchdb</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<h4 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h4><p>&ensp;&ensp;&ensp;&ensp;在主题文件夹<code>themes/next/_config.yml</code>中搜索<code>local_search</code>字段，将其<code>enable</code>字段设置为<code>true</code>。</p>
+<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/PixPin_2025-04-08_19-46-26.png"></p>
+<h4 id="在根目录-config-yml-中任意行插入以下内容："><a href="#在根目录-config-yml-中任意行插入以下内容：" class="headerlink" title="在根目录_config.yml 中任意行插入以下内容："></a>在根目录_config.yml 中任意行插入以下内容：</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  <span class="built_in">limit</span>: 10000</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/PixPin_2025-04-08_19-41-07.png"></p>
+<h3 id="置顶文章"><a href="#置顶文章" class="headerlink" title="置顶文章"></a>置顶文章</h3><h4 id="卸载原有插件卸载-hexo-generator-index-后安装新插件-hexo-generator-index-pin-top"><a href="#卸载原有插件卸载-hexo-generator-index-后安装新插件-hexo-generator-index-pin-top" class="headerlink" title="卸载原有插件卸载 hexo-generator-index 后安装新插件 hexo-generator-index-pin-top"></a>卸载原有插件卸载 hexo-generator-index 后安装新插件 hexo-generator-index-pin-top</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm r hexo-generator-index</span><br><span class="line">npm i hexo-generator-index-pin-top -S</span><br></pre></td></tr></table></figure>
+
+<h4 id="在文章中添加置顶信息"><a href="#在文章中添加置顶信息" class="headerlink" title="在文章中添加置顶信息"></a>在文章中添加置顶信息</h4><p>&ensp;&ensp;&ensp;&ensp;在需要置顶的文章的<code>Front-matter</code>中添加<code>top</code>字段，并设置一个值（值越大，置顶越靠前）,或者设为 true，默认为 1。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 置顶文章标题</span><br><span class="line"><span class="built_in">date</span>: 2025-04-08 14:29:10</span><br><span class="line">tags:</span><br><span class="line">top: 1</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<h4 id="添加置顶标志-如果不添加也能生效，不过没有置顶字样"><a href="#添加置顶标志-如果不添加也能生效，不过没有置顶字样" class="headerlink" title="添加置顶标志,如果不添加也能生效，不过没有置顶字样"></a>添加置顶标志,如果不添加也能生效，不过没有置顶字样</h4><p>&ensp;&ensp;&ensp;&ensp;在主题文件夹 <code>themes/next/layout/_macro/post.swig</code>中搜索<code>post-meta</code>字段，在<code>&lt;div class=&quot;post-meta&quot;&gt;</code>标签中添加以下代码：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&#123;% <span class="keyword">if</span> post.top %&#125;</span><br><span class="line">  &lt;span class=<span class="string">&quot;post-meta-item-icon&quot;</span>&gt;</span><br><span class="line">  &lt;i class=<span class="string">&quot;fa fa-thumb-tack&quot;</span>&gt;&lt;/i&gt;</span><br><span class="line">  &lt;/span&gt;S</span><br><span class="line">  &lt;font color=red&gt;置顶&lt;/font&gt;</span><br><span class="line">  &lt;span class=<span class="string">&quot;post-meta-divider&quot;</span>&gt;|&lt;/span&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/Snipaste_2025-04-08_18-09-10.png"></p>
+<h3 id="代码块去掉行号"><a href="#代码块去掉行号" class="headerlink" title="代码块去掉行号"></a>代码块去掉行号</h3><p>&ensp;&ensp;&ensp;&ensp;在博客根目录_config.yml 中搜索<code>line-numbers</code>字段，将<code>line-numbers</code>字段设置为<code>false</code>，效果如下：</p>
+<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/PixPin_2025-04-08_19-43-11.png"></p>
+<h3 id="网站底部加入统计"><a href="#网站底部加入统计" class="headerlink" title="网站底部加入统计"></a>网站底部加入统计</h3><h4 id="打开-themes-next-layout-partial-footer-njk-文件-在文件的最后位置添加以下代码："><a href="#打开-themes-next-layout-partial-footer-njk-文件-在文件的最后位置添加以下代码：" class="headerlink" title="打开 themes\next\layout_partial\footer.njk 文件,在文件的最后位置添加以下代码："></a>打开 themes\next\layout_partial\footer.njk 文件,在文件的最后位置添加以下代码：</h4><figure class="highlight css"><table><tr><td class="code"><pre><span class="line">&lt;<span class="selector-tag">div</span> class=&quot;<span class="selector-tag">footer</span>-info-<span class="attribute">container</span>&quot;&gt;</span><br><span class="line">    &lt;<span class="selector-tag">div</span> class=&quot;site-running-<span class="selector-tag">time</span>&quot;&gt;</span><br><span class="line">        &lt;<span class="selector-tag">span</span> id=&quot;timeDate&quot;&gt;载入天数...&lt;/<span class="selector-tag">span</span>&gt;&lt;<span class="selector-tag">span</span> id=&quot;times&quot;&gt;载入时分秒...&lt;/<span class="selector-tag">span</span>&gt;</span><br><span class="line">        &lt;script&gt;</span><br><span class="line">            <span class="selector-tag">var</span> now = new Date();</span><br><span class="line">            function createtime() &#123;</span><br><span class="line">                // 在此处修改你的建站时间</span><br><span class="line">                <span class="selector-tag">var</span> grt = new Date(&quot;<span class="number">08</span>/<span class="number">10</span>/<span class="number">2020</span> <span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span><span class="string">&quot;);</span></span><br><span class="line"><span class="string">                now.setTime(now.getTime() + 250);</span></span><br><span class="line"><span class="string">                days = (now - grt) / 1000 / 60 / 60 / 24;</span></span><br><span class="line"><span class="string">                dnum = Math.floor(days);</span></span><br><span class="line"><span class="string">                hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum);</span></span><br><span class="line"><span class="string">                hnum = Math.floor(hours);</span></span><br><span class="line"><span class="string">                if (String(hnum).length == 1) &#123;</span></span><br><span class="line"><span class="string">                    hnum = &quot;</span><span class="number">0</span><span class="string">&quot; + hnum;</span></span><br><span class="line"><span class="string">                &#125;</span></span><br><span class="line"><span class="string">                minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);</span></span><br><span class="line"><span class="string">                mnum = Math.floor(minutes);</span></span><br><span class="line"><span class="string">                if (String(mnum).length == 1) &#123;</span></span><br><span class="line"><span class="string">                    mnum = &quot;</span><span class="number">0</span><span class="string">&quot; + mnum;</span></span><br><span class="line"><span class="string">                &#125;</span></span><br><span class="line"><span class="string">                seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);</span></span><br><span class="line"><span class="string">                snum = Math.round(seconds);</span></span><br><span class="line"><span class="string">                if (String(snum).length == 1) &#123;</span></span><br><span class="line"><span class="string">                    snum = &quot;</span><span class="number">0</span><span class="string">&quot; + snum;</span></span><br><span class="line"><span class="string">                &#125;</span></span><br><span class="line"><span class="string">                document.getElementById(&quot;</span>timeDate<span class="string">&quot;).innerHTML = &quot;</span>已运行 <span class="string">&quot; + dnum + &quot;</span> 天 <span class="string">&quot;;</span></span><br><span class="line"><span class="string">                document.getElementById(&quot;</span>times<span class="string">&quot;).innerHTML = hnum + &quot;</span> 小时 <span class="string">&quot; + mnum + &quot;</span> 分 <span class="string">&quot; + snum + &quot;</span> 秒<span class="string">&quot;;</span></span><br><span class="line"><span class="string">            &#125;</span></span><br><span class="line"><span class="string">            setInterval(&quot;</span><span class="built_in">createtime</span>()<span class="string">&quot;, 250);</span></span><br><span class="line"><span class="string">        &lt;/script&gt;</span></span><br><span class="line"><span class="string">    &lt;/div&gt;</span></span><br><span class="line"><span class="string">    &lt;div class=&quot;</span>site-visitor-count<span class="string">&quot;&gt;</span></span><br><span class="line"><span class="string">        &lt;span class=&quot;</span>post-meta-divider<span class="string">&quot;&gt;|&lt;/span&gt;</span></span><br><span class="line"><span class="string">        &lt;span id=&quot;</span>busuanzi_container_site_pv<span class="string">&quot;&gt;&amp;emsp;总访问量&lt;span id=&quot;</span>busuanzi_value_site_pv<span class="string">&quot;&gt;&lt;/span&gt;次&lt;/span&gt;</span></span><br><span class="line"><span class="string">    &lt;/div&gt;</span></span><br><span class="line"><span class="string">&lt;/div&gt;</span></span><br><span class="line"><span class="string">&lt;script async src=&quot;</span>//busuanzi.ibruce.info/busuanzi/<span class="number">2.3</span>/busuanzi.pure.mini.js<span class="string">&quot;&gt;&lt;/script&gt;</span></span><br><span class="line"><span class="string">&lt;style&gt;</span></span><br><span class="line"><span class="string">    .footer-info-container &#123;</span></span><br><span class="line"><span class="string">        display: flex;</span></span><br><span class="line"><span class="string">        justify-content: center;</span></span><br><span class="line"><span class="string">        align-items: center;</span></span><br><span class="line"><span class="string">    &#125;</span></span><br><span class="line"><span class="string">    .site-running-time,</span></span><br><span class="line"><span class="string">    .site-visitor-count &#123;</span></span><br><span class="line"><span class="string">        margin: 0 10px;</span></span><br><span class="line"><span class="string">        font-size: 0.9em; /* 调整字体大小为原来的 0.9 倍，达到小一号的效果 */</span></span><br><span class="line"><span class="string">    &#125;</span></span><br><span class="line"><span class="string">&lt;/style&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="打开-Next-主题的配置文件-themes-next-config-yml，找到-footer-字段，加入配置-counter-true"><a href="#打开-Next-主题的配置文件-themes-next-config-yml，找到-footer-字段，加入配置-counter-true" class="headerlink" title="打开 Next 主题的配置文件 themes&#x2F;next&#x2F;_config.yml，找到 footer 字段，加入配置 counter: true"></a>打开 Next 主题的配置文件 themes&#x2F;next&#x2F;_config.yml，找到 footer 字段，加入配置 counter: true</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">counter: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://r2-img.0910.men/PicGo-img/2025/04/PixPin_2025-04-09_11-45-30.png" alt="如图所示"></p>
+]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>笔记</tag>
+        <tag>Next</tag>
+        <tag>教程</tag>
       </tags>
   </entry>
   <entry>
@@ -634,8 +634,8 @@
         <category>笔记</category>
       </categories>
       <tags>
-        <tag>工具</tag>
         <tag>笔记</tag>
+        <tag>工具</tag>
         <tag>软件推荐</tag>
       </tags>
   </entry>
@@ -676,8 +676,8 @@
         <category>笔记</category>
       </categories>
       <tags>
-        <tag>MarkDown</tag>
         <tag>笔记</tag>
+        <tag>MarkDown</tag>
       </tags>
   </entry>
   <entry>
