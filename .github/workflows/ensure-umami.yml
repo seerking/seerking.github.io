@@ -1,0 +1,56 @@
+name: ensure-umami
+
+# Hexo 重新生成后把埋点补回来：任何 push 都检查所有 html，
+# 缺 stats.seerking.com/script.js 的就插到 </body> 前，然后提交回去。
+# 自动提交带 [skip-umami]，本 job 会跳过它自己产生的提交，不会死循环。
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  inject:
+    if: "!contains(github.event.head_commit.message, '[skip-umami]')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Inject Umami tag into pages missing it
+        run: |
+          python3 - <<'PY'
+          import os
+          SNIP = ('<script defer src="https://stats.seerking.com/script.js" '
+                  'data-website-id="a6cdbc7c-22d0-4db4-846b-64c45f6cf9a2"></script>')
+          n = 0
+          for dp, dn, fn in os.walk('.'):
+              dn[:] = [d for d in dn if d != '.git']
+              for f in fn:
+                  if not f.endswith('.html'):
+                      continue
+                  p = os.path.join(dp, f)
+                  s = open(p, encoding='utf-8', errors='ignore').read()
+                  if 'stats.seerking.com/script.js' in s:
+                      continue
+                  i = s.rfind('</body>')
+                  if i < 0:
+                      continue
+                  open(p, 'w', encoding='utf-8').write(s[:i] + SNIP + s[i:])
+                  n += 1
+          print('injected', n)
+          PY
+
+      - name: Commit if changed
+        run: |
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -A
+            git commit -m "chore: 自动补齐 Umami 埋点 [skip-umami]"
+            git push
+          else
+            echo "no changes"
+          fi
